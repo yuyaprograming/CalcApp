@@ -13,6 +13,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        val snackbar = Snackbar.make(rootLayout , "メッセージ", Snackbar.LENGTH_LONG)
+        snackbar.show()
+
         button1.setOnClickListener(this)
         button2.setOnClickListener(this)
         button3.setOnClickListener(this)
